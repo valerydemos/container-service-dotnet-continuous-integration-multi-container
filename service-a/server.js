@@ -21,9 +21,9 @@ app.get('/api', function (req, res) {
         var requestCount = reply;
     });
 
-    // Invoke service-b
+   // Invoke service-b
     request('http://service-b', function (error, response, body) {
-        res.send('Hi from service A running on ' + os.hostname() + ' and ' + body);
+        res.send('Hi there from service A running on ' + os.hostname() + ' and ' + body);
     });
 });
 
